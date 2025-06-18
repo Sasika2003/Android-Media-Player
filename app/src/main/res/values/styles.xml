@@ -1,0 +1,57 @@
+<resources>
+    <style name="CustomButton">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#2196F3</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="android:padding">8dp</item>Resource 7f0f00a1 is a complex map type.
+        2025-03-19 14:44:35.620 15249-15249 AndroidRuntime          com.example.mediaplayerdemo          D  Shutting down VM
+        2025-03-19 14:44:35.626 15249-15249 AndroidRuntime          com.example.mediaplayerdemo          E  FATAL EXCEPTION: main
+        Process: com.example.mediaplayerdemo, PID: 15249
+        java.lang.RuntimeException: Unable to start activity ComponentInfo{com.example.mediaplayerdemo/com.example.mediaplayerdemo.MainActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x7f0f00a1
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4035)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4201)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2438)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loopOnce(Looper.java:226)
+        at android.os.Looper.loop(Looper.java:313)
+        at android.app.ActivityThread.main(ActivityThread.java:8663)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1135)
+        Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x7f0f00a1
+        at android.content.res.ResourcesImpl.getValueForDensity(ResourcesImpl.java:249)
+        at android.content.res.Resources.getDrawableForDensity(Resources.java:1047)
+        at android.content.res.Resources.getDrawable(Resources.java:987)
+        at android.content.Context.getDrawable(Context.java:767)
+        at android.view.View.setBackgroundResource(View.java:25287)
+        at com.example.mediaplayerdemo.MainActivity.createEffectButtons(MainActivity.kt:118)
+        at com.example.mediaplayerdemo.MainActivity.onCreate(MainActivity.kt:54)
+        at android.app.Activity.performCreate(Activity.java:8290)
+        at android.app.Activity.performCreate(Activity.java:8270)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1329)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:4009)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:4201) 
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:103) 
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:135) 
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:95) 
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2438) 
+        at android.os.Handler.dispatchMessage(Handler.java:106) 
+        at android.os.Looper.loopOnce(Looper.java:226) 
+        at android.os.Looper.loop(Looper.java:313) 
+        at android.app.ActivityThread.main(ActivityThread.java:8663) 
+        at java.lang.reflect.Method.invoke(Native Method) 
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:571) 
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1135) 
+        2025-03-19 14:44:35.665 15249-15249 Process                 com.example.mediaplayerdemo          I  Sending signal. PID: 15249 SIG: 9
+        2025-03-19 14:44:35.709  5153-7447  WindowManager           system_server                        E  win=Window{db7a95e u0 Splash Screen com.example.mediaplayerdemo EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.ActivityRecord.destroySurfaces:5867 com.android.server.wm.ActivityRecord.destroySurfaces:5848 com.android.server.wm.WindowState.onExitAnimationDone:5983 com.android.server.wm.ActivityRecord$$ExternalSyntheticLambda13.accept:2 java.util.ArrayList.forEach:1528 com.android.server.wm.ActivityRecord.onAnimationFinished:7940 com.android.server.wm.ActivityRecord.postApplyAnimation:5598
+
+    </style>
+</resources>

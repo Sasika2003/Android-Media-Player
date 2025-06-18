@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#F3F3F3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Media Player Demo"
+            android:textSize="24sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:paddingBottom="16dp" />
+
+        <!-- Audio Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎵 Audio Options"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/playAudioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="▶️ Play Audio (No Effects)" />
+
+        <Button
+            android:id="@+id/playAudioWithEffectsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="🎛 Play Audio (Choose Effects)" />
+
+        <!-- Video Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🎬 Video Options"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:paddingTop="10dp" />
+
+        <Button
+            android:id="@+id/playVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="▶️ Play Video (No Effects)" />
+
+        <Button
+            android:id="@+id/playVideoWithEffectsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="🎞 Play Video (Choose Effects)" />
+
+        <!-- Other Buttons -->
+        <Button
+            android:id="@+id/recordVideoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="📹 Record Video" />
+
+        <Button
+            android:id="@+id/captureImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_default"
+            android:text="📷 Capture Image" />
+
+        <!-- Video Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📹 Video Preview"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:paddingTop="20dp" />
+
+        <FrameLayout
+            android:layout_width="320dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#CCCCCC">
+
+            <!-- Replace VideoView with TextureView -->
+            <TextureView
+                android:id="@+id/textureView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center" />
+
+            <!-- Add container for media controller -->
+            <FrameLayout
+                android:id="@+id/videoControllerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom" />
+        </FrameLayout>
+
+        <!-- Image Section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📷 Captured Image"
+            android:textSize="18sp"
+            android:textColor="#666666"
+            android:paddingTop="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="10dp"
+            android:background="#DDDDDD"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+</ScrollView>
